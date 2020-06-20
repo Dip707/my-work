@@ -27,10 +27,11 @@ function Reset() {
 
 }
 
-document.getElementById('time').onclick = displayTime;
+// document.getElementById('time').onclick = displayTime;
 
-function displayTime() {
+// function displayTime() {
 
-    document.getElementById("total").innerText = Date();
-    document.getElementById("total").style.fontSize = "0.25em";
-}
+//     document.getElementById("total").innerHTML = Date();
+//     document.getElementById("total").style.fontSize = "0.25em";
+//     document.getElementById("total").style.margin = "0em";
+// }
