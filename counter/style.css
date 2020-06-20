@@ -10,12 +10,13 @@ html {
 }
 
 .counter {
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50%;
-    width: 65%;
+    height: 60%;
+    width: 75%;
     background-color: aqua;
 }
 
