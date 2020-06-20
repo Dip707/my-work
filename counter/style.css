@@ -40,7 +40,7 @@ html {
 
 .functions {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: initial;
 }
 
 .btn_div {
