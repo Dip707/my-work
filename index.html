@@ -11,7 +11,7 @@
 
 
 <body>
-    <header class="navbar">
+    <header id="nav" class="navbar" onscroll="myScroll()">
         <a class="nav_items" href="./#">
             <img class="logo" src="./assets/icons/logo.png" alt="logo">
         </a>
@@ -76,9 +76,9 @@
         <div id="about_items">
             <section class="about_item" id="bio">
                 <h1>BIO</h1>
-                <li>
-                    Hello, I am <a href="#navbar">Dip Turkar</a> .
-                </li>
+                <ul>
+                    Hello, I am <a href="#nav">Dip Turkar</a> . I am a Computer Science Undergrad at BITS Pilani-Goa Campus. I love programming, solving problems,
+                </ul>
             </section>
             <section class="about_item" id="photo">
                 <h1>Photo</h1>
@@ -94,7 +94,7 @@
             </section>
         </div>
     </main>
-    <script src="app.js "></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
