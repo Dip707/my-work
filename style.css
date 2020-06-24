@@ -169,10 +169,6 @@ hr {
     transition-duration: 0.5s;
 }
 
-#avatar {
-    align-items: ;
-}
-
 #avatar_svg {
     display: flex;
     justify-content: center;
