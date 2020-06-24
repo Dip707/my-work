@@ -2,46 +2,99 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="./Group 2.png" type="image/gif" sizes="16x16">
+    <link rel="icon" style="margin: 0em;padding: 0em;" href="./assets/icons/logo.png" type="image/gif" sizes="16x16">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-
-    <title>Projects by Dip</title>
+    <title>Dip Turkar</title>
 </head>
 
+
 <body>
-    <div class="navbar">
-        <a href="./">
-            <img class="logo" src="./Group 2.png" alt="logo">
+    <header class="navbar">
+        <a class="nav_items" href="./#">
+            <img class="logo" src="./assets/icons/logo.png" alt="logo">
         </a>
-        <div>Portfolio</div>
-        <div id="hello" class="btn_nav">
-            <a style="text-decoration:none " href="./hello">Say Hello</a>
-
+        <div class="nav_items" id="heading">
+            <!-- Dip Turkar -->
         </div>
-    </div>
-    <h1>Welcome to My Projects🥰</h1>
-
-    <div id="description">
-        <p>
-            Hello, Welcome to my projects website. Carry on and see what all projects I have made till date. These projects are sorted date wise.
-        </p>
-    </div>
-    <div class="projects">
-        <a target="_blanck" href="counter">Counter</a>
-    </div>
-    <div class="projects">
-        <a target="_blanck" href="color_flipper">Color Flipper</a>
-    </div>
-    <!-- <div class="projects">
-        <a href="https://projects.turkar.me/"></a>
-    </div> -->
-
-
-
-
-    <script src="./app.js"></script>
+        <nav class="nav_items" id="btn_div">
+            <a id="nav_aboutMe" class="nav_btn" href="#line_about">
+                About Me
+            </a>
+            <div id="nav_projects" class="nav_btn">
+                Projects
+            </div>
+            <div id="nav_sayHello" class="nav_btn">
+                Contact
+            </div>
+        </nav>
+    </header>
+    <main id="land">
+        <section class="land_item" id="land_item1">
+            <div id="description">
+                <span id="line1">
+                        Hi, My name is
+                    </span>
+                <span id="name">
+                        Dip Turkar.
+                    </span>
+                <span id="motto">
+                        I love developing websites and solving problems.
+                    </span>
+                <span id="intro">
+                        I am a Front-End Web Developer who uses Vanilla Javascript and Common-Sense to make amazing
+                    websites. I love learning new things and I am doing so day by day.
+                    </span>
+                <!-- <span id="work">
+                    
+                </span> -->
+            </div>
+            <div id="hello_btn">
+                <a href="mailto:dipturkar@gmail.com"> Say Hello</a>
+            </div>
+        </section>
+        <section class="land_item" id="land_item2">
+            <div id="avatar">
+                <img id="avatar_svg" src="./assets/avatar/avatar.svg " alt="avatar ">
+            </div>
+            <div id="welcome">
+                <h1> Welcome to my</h1>
+                <h1>
+                    Portfolio
+                </h1>
+            </div>
+        </section>
+    </main>
+    <hr id="line_about">
+    <main id="about">
+        <div id="title">
+            <h1>
+                About Me
+            </h1>
+        </div>
+        <div id="about_items">
+            <section class="about_item" id="bio">
+                <h1>BIO</h1>
+                <li>
+                    Hello, I am <a href="#navbar">Dip Turkar</a> .
+                </li>
+            </section>
+            <section class="about_item" id="photo">
+                <h1>Photo</h1>
+            </section>
+            <section class="about_item" id="skills">
+                <h1>SKILLS</h1>
+            </section>
+            <section class="about_item" id="hobbies">
+                <h1>HOBBIES</h1>
+            </section>
+            <section class="about_item" id="edu_details">
+                <h1>EDUCATION DETAILS</h1>
+            </section>
+        </div>
+    </main>
+    <script src="./app.js "></script>
 </body>
 
 </html>
