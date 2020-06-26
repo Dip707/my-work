@@ -5,15 +5,16 @@
     <link rel="icon" style="margin: 0em;padding: 0em;" href="./assets/icons/logo.png" type="image/gif" sizes="16x16">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
     <title>Dip Turkar</title>
 </head>
 
 
 <body>
-    <header id="nav" class="navbar" onscroll="myScroll()">
+    <header id="nav" class="navbar">
         <a class="nav_items" href="./#">
-            <img class="logo" src="./assets/icons/logo.png" alt="logo">
+            <img id="logon" class="logo" src="./assets/icons/logo.png" alt="logo">
         </a>
         <div class="nav_items" id="heading">
             <!-- Dip Turkar -->
@@ -29,23 +30,25 @@
                 Contact
             </div>
         </nav>
+
     </header>
+
     <main id="land">
         <section class="land_item" id="land_item1">
             <div id="description">
                 <span id="line1">
-                        Hi, My name is
-                    </span>
+                    Hi, My name is
+                </span>
                 <span id="name">
-                        Dip Turkar.
-                    </span>
+                    Dip Turkar.
+                </span>
                 <span id="motto">
-                        I love developing websites and solving problems.
-                    </span>
+                    I love developing websites and solving problems.
+                </span>
                 <span id="intro">
-                        I am a Front-End Web Developer who uses Vanilla Javascript and Common-Sense to make amazing
+                    I am a Front-End Web Developer who uses Vanilla Javascript and Common-Sense to make amazing
                     websites. I love learning new things and I am doing so day by day.
-                    </span>
+                </span>
                 <!-- <span id="work">
                     
                 </span> -->
@@ -56,7 +59,7 @@
         </section>
         <section class="land_item" id="land_item2">
             <div id="avatar">
-                <img id="avatar_svg" src="./assets/avatar/avatar.svg " alt="avatar ">
+                <img id="avatar_svg" style="height: 15em;" src="./assets/avatar/avatar.svg " alt="avatar ">
             </div>
             <div id="welcome">
                 <h1> Welcome to my</h1>
@@ -73,28 +76,58 @@
                 About Me
             </h1>
         </div>
-        <div id="about_items">
-            <section class="about_item" id="bio">
-                <h1>BIO</h1>
-                <ul>
-                    Hello, I am <a href="#nav">Dip Turkar</a> . I am a Computer Science Undergrad at BITS Pilani-Goa Campus. I love programming, solving problems,
-                </ul>
-            </section>
-            <section class="about_item" id="photo">
-                <h1>Photo</h1>
-            </section>
-            <section class="about_item" id="skills">
-                <h1>SKILLS</h1>
-            </section>
-            <section class="about_item" id="hobbies">
-                <h1>HOBBIES</h1>
-            </section>
-            <section class="about_item" id="edu_details">
-                <h1>EDUCATION DETAILS</h1>
+        <div id="content">
+            <div id="about_items">
+                <section class="about_item" onclick="tabFunction(0,'about_bio')" id="about_bio">
+                    <h1>BIO</h1>
+                </section>
+                <section class="about_item" onclick="tabFunction(1,'about_skills')" id="about_skills">
+                    <h1>SKILLS</h1>
+                </section>
+                <section class="about_item" onclick="tabFunction(2,'about_hobbies')" id="about_hobbies">
+                    <h1>HOBBIES</h1>
+                </section>
+                <section class="about_item" onclick="tabFunction(3,'about_edu')" id="about_edu">
+                    <h1>EDUCATION DETAILS</h1>
+                </section>
+            </div>
+            <div id="about_details">
+                <section class="about_detail" id="bio">
+                    Hello I am
+                    <y> <span id="bio_name">Dip Turkar</span> </y>. I am a
+                    <y id="bio_cs"> CS UnderGrad </y> at
+                    <y>BITS Goa</y>. <br>
+                    <br> I enjoy developing and designing webpages and my goal is to give nicest user experience to the people visiting my website. Currently I live in
+                    <y>Goa</y> but I hail from
+                    <y>Nagpur, Maharashtra</y>. <br>
+                    <br> Besides
+                    <y>Front-End Development</y> I am also studying
+                    <y>Back-End</y>,
+                    <y>Competitive Coding</y> and
+                    <y>Algorithmic Trading</y> using
+                    <y>Python</y>.
+                </section>
+                <section class="about_detail" id="skills">
+                    <y>HTML CSS JAVASCRIPT</y>
+                </section>
+                <section class="about_detail" id="hobbies">
+
+                </section>
+                <section class="about_detail" id="edu_details">
+
+                </section>
+            </div>
+            <section id="about_photo">
+                <!-- <h1>Photo</h1> -->
+                <!-- <img id="profile_photo" src="assets/images/profile.png" alt="Profile Photo"> -->
             </section>
         </div>
     </main>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
+
+<!-- <ul>
+    Hello, I am <a href="#nav">Dip Turkar</a> . I am a Computer Science Undergrad at BITS Pilani-Goa Campus. I love programming, solving problems,
+</ul> --'>'
