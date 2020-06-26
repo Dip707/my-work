@@ -23,12 +23,12 @@
             <a id="nav_aboutMe" class="nav_btn" href="#line_about">
                 About Me
             </a>
-            <div id="nav_projects" class="nav_btn">
+            <a id="nav_projects" class="nav_btn" href="#line_projects">
                 Projects
-            </div>
-            <div id="nav_sayHello" class="nav_btn">
+            </a>
+            <a id="nav_sayHello" class="nav_btn" href="#contact">
                 Contact
-            </div>
+            </a>
         </nav>
 
     </header>
@@ -76,9 +76,9 @@
                 About Me
             </h1>
         </div>
-        <div id="content">
+        <div id="about_content">
             <div id="about_items">
-                <section class="about_item" onclick="tabFunction(0,'about_bio')" id="about_bio">
+                <section class="about_item about_bio" onclick="tabFunction(0,'about_bio')" id="about_bio">
                     <h1>BIO</h1>
                 </section>
                 <section class="about_item" onclick="tabFunction(1,'about_skills')" id="about_skills">
@@ -108,13 +108,30 @@
                     <y>Python</y>.
                 </section>
                 <section class="about_detail" id="skills">
-                    <y>HTML CSS JAVASCRIPT</y>
+                    As a Web Developer I am proficient in: <br><br>
+                    <y>HTML &nbsp; CSS &nbsp; JAVASCRIPT
+                        <br><br></y>
+                    I love to automate all the small repetitive things in my life:<br><br>
+                    <y> Python <br><br></y>
+                    I also practice Competitive Coding to improve my problem solving skills:<br><br>
+                    <y> C &nbsp; C++ <br><br>
+
+                    </y>
+
                 </section>
                 <section class="about_detail" id="hobbies">
+                    I love doing all sorts of things. <br><br> I love coding, gaming, cooking, solving challenges(it gives me thrill), reading books in fiction, finance and self help and much more.
 
+                    <br><br> In sports, I like Chess, Badminton, Table Tennis, Swimming, Volleyball, Cycling and Skating.
+                    <br><br>
                 </section>
                 <section class="about_detail" id="edu_details">
-
+                    I am currently studying in
+                    <y>BITS Goa</y>. <br><br> I studied 2 years in
+                    <y>Allen, Kota</y> for Jee and BITSAT. My rank was
+                    <y>#4986</y> in Jee-Mains and I got
+                    <y>360/450</y> in BITSAT. <br><br> Senior Secondary -- L.A.S.E.A Jhalawar Rajasthan
+                    <br><br> Secondary School -- L.K.S.H.S Vijaygram Sausar Chhindwara
                 </section>
             </div>
             <section id="about_photo">
@@ -123,6 +140,57 @@
             </section>
         </div>
     </main>
+    <hr id="line_projects">
+    <main id="projects">
+        <div id="title">
+            <h1>
+                Projects
+            </h1>
+        </div>
+        <div id="p_content">
+            <div class="project_folder">
+                <header>
+
+                    <img id="folder_icon" src="assets/icons/folder_icon.svg" alt="folder_icon">
+
+                    <a href="https://github.com/Dip707/my-work" target="_blanck">
+                        <img id="github_folder" src="assets/icons/github_icon.svg" alt="visit github folder">
+                    </a>
+
+                    <a href="/">
+                        <img id="go_icon" src="assets/icons/Go_icon.svg" alt="view website">
+                    </a>
+                </header>
+                <main>
+                    <h2>
+                        Portfolio Website
+                    </h2>
+                    <br>
+                    <p>
+                        My first detail oriented Portfolio Website
+                    </p>
+                </main>
+                <footer>
+                    <y>HTML &nbsp; CSS &nbsp; JAVASCRIPT</y>
+                </footer>
+            </div>
+            <div class="project_folder">
+                <img id="folder_icon" src="assets/icons/folder_icon.svg" alt="folder_icon">
+            </div>
+            <div class="project_folder">
+                <img id="folder_icon" src="assets/icons/folder_icon.svg" alt="folder_icon">
+            </div>
+            <div class="project_folder">
+                p4
+            </div>
+            <div class="project_folder">
+                p5
+            </div>
+
+        </div>
+    </main>
+    <hr>
+    <main id="contact"></main>
     <script src="./app.js"></script>
 </body>
 

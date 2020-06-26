@@ -38,7 +38,17 @@ hr {
     background-color: #b3ff00;
     border: #b3ff00 solid;
     width: 80%;
-    margin: 4em auto 5.5em auto;
+    margin: 7em auto 7.5em auto;
+}
+
+y {
+    text-shadow: 0.01em 0.01em 0.25em #ff0000;
+}
+
+y:hover {
+    text-shadow: none;
+    color: #B3FF00;
+    cursor: context-menu;
 }
 
 .navbar {
@@ -50,6 +60,7 @@ hr {
     top: 0em;
     background-color: #4a01f3;
     transition: 0.4s;
+    z-index: 100;
 }
 
 .logo {
@@ -97,12 +108,6 @@ hr {
     cursor: pointer;
     transform: scale(1.1);
 }
-
-
-/* .nav_btn:active {
-    color: #B3FF00;
-    cursor: pointer;
-} */
 
 .nav_burger {
     flex: 0.1;
@@ -206,7 +211,7 @@ hr {
     color: #B3FF00;
 }
 
-#content {
+#about_content {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -258,32 +263,101 @@ hr {
     border-radius: 1em;
 }
 
+#about_details {
+    border: 0.10em solid #B3FF00;
+}
+
+.about_bio {
+    border-left: 0.19em solid #B3FF00;
+}
+
 #bio {
     /* display: none; */
     line-height: 2em;
-    /* background-image: radial-gradient(at top left, #4c00ff, #3c00df, #3d00cf); */
+    background-image: linear-gradient(to right bottom, #4c00ff, #3c00df, #3d00cf);
 }
-
-
-/* #about_bio {
-    
-} */
 
 #skills {
     display: none;
-    /* background-image: radial-gradient(at left, #4c00ff, #3c00df, #3d00cf); */
+    background-image: linear-gradient(to right, #4c00ff, #3c00df, #3c00df, #3d00cf);
+}
+
+#hobbies {
+    display: none;
+    line-height: 2em;
+    background-image: linear-gradient(to right, #4c00ff, #3c00df, #3c00df, #3d00cf);
+}
+
+#edu_details {
+    display: none;
+    line-height: 2em;
+    background-image: linear-gradient(to right top, #4c00ff, #3c00df, #3d00cf);
 }
 
 #about_photo {
     flex: 1;
 }
 
-y {
-    text-shadow: 0.01em 0.01em 0.25em #00ffff;
+#projects {
+    width: 85%;
+    margin: auto;
 }
 
-y:hover {
-    text-shadow: none;
+#p_content {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project_folder {
+    height: 15em;
+    width: 15em;
+    background-color: #3200a8;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0.2em 0.2em 0.5em black;
+    border-radius: 0.3em;
+}
+
+.project_folder:hover {
+    transform: translateY(-0.20em);
+}
+
+#folder_icon {
+    height: 2em;
+    margin-right: 8em;
+}
+
+#github_folder {
+    height: 1.5em;
+    margin-right: 1em;
+}
+
+#go_icon {
+    height: 1.5em;
+}
+
+.project_folder header {
+    height: 20%;
+    display: flex;
+}
+
+.project_folder main {
+    height: 60%;
+}
+
+.project_folder main h2 {
+    font-size: 1.7em;
+}
+
+.project_folder main p {
+    line-height: 1.6em;
     color: #B3FF00;
-    cursor: context-menu;
+}
+
+.project_folder footer {
+    height: 20%;
 }
