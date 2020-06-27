@@ -5,7 +5,7 @@
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
             document.getElementById('nav').style.height = "4.5em";
             document.getElementById('nav').style.backgroundColor = "#3d00cf";
-            document.getElementById('logon').style.height = "3.5em";
+            document.getElementById('logon').style.height = "3.7em";
             document.getElementById('nav_aboutMe').style.height = "2.3em";
             document.getElementById('nav_projects').style.height = "2.3em";
             document.getElementById('nav_sayHello').style.height = "2.3em";
@@ -14,7 +14,7 @@
 
         } else {
             document.getElementById('nav').style.height = "5em";
-            document.getElementById('logon').style.height = "4em";
+            document.getElementById('logon').style.height = "3.5em";
             document.getElementById('nav').style.backgroundColor = "#4a01f3";
             document.getElementById('nav_aboutMe').style.height = "2.6em";
             document.getElementById('nav_projects').style.height = "2.6em";
