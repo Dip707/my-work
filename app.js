@@ -2,13 +2,14 @@
     window.onscroll = function() { scrollFunction() };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
             document.getElementById('nav').style.height = "4.5em";
             document.getElementById('nav').style.backgroundColor = "#3d00cf";
             document.getElementById('logon').style.height = "3.5em";
             document.getElementById('nav_aboutMe').style.height = "2.3em";
             document.getElementById('nav_projects').style.height = "2.3em";
             document.getElementById('nav_sayHello').style.height = "2.3em";
+            document.getElementById('gotop').style.display = "flex";
             // document.getElementById('').style.height = "2.3em";
 
         } else {
@@ -18,6 +19,7 @@
             document.getElementById('nav_aboutMe').style.height = "2.6em";
             document.getElementById('nav_projects').style.height = "2.6em";
             document.getElementById('nav_sayHello').style.height = "2.6em";
+            document.getElementById('gotop').style.display = "none";
 
         }
     }
@@ -43,6 +45,14 @@
 
 
 }
+
+// { //copy whatsapp number
+//     function copyWhatsapp() {
+//         let number = "6377037591";
+//         document.execCommand("copy");
+
+//     }
+// }
 
 
 
