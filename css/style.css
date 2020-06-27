@@ -13,7 +13,7 @@ a {
     color: white;
 }
 
- ::selection {
+::selection {
     color: black;
     background-color: #baff19;
 }
@@ -303,7 +303,7 @@ y:hover {
     margin: auto;
 }
 
-#p_content {
+#project_content {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -361,4 +361,9 @@ y:hover {
 
 .project_folder footer {
     height: 20%;
+}
+
+#contact {
+    width: 85%;
+    margin: auto;
 }

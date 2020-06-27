@@ -33,6 +33,7 @@ body {
     color: white;
     cursor: pointer;
     font-family: 'Gloria Hallelujah', cursive;
+    user-select: none;
 }
 
 #click:active {
