@@ -351,11 +351,12 @@ y:hover {
 
 .project_folder main h2 {
     font-size: 1.7em;
+    height: 40%;
 }
 
 .project_folder main p {
     line-height: 1.6em;
-    color: #B3FF00;
+    color: #777777;
 }
 
 .project_folder footer {

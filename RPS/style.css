@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header>h1 {
+    text-align: center;
+    padding: 20;
+    margin-bottom: 10;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(59, 15, 15, 0.973);
+    background-color: white;
+}
+
+body {
+    background-color: rgb(3, 1, 14);
+    position: relative;
+}
+
+.scoreboard {
+    text-align: center;
+    padding: 4px;
+    font-weight: bold;
+    border: 4px solid white;
+    margin: 0 250px;
+}
+
+.player {
+    margin: 20px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+#user {
+    position: absolute;
+    left: 210px;
+    top: 100px;
+}
+
+#comp {
+    position: absolute;
+    right: 210px;
+    top: 100px;
+}
+
+.score {
+    font-size: 60px;
+    color: floralwhite;
+}
+
+.choice {
+    display: inline-block;
+    align-content: center;
+}
+
+.result {
+    font-size: 25px;
+    color: floralwhite;
+    text-align: center;
+    margin: 20px;
+}
+
+.choices {
+    text-align: center;
+}
+
+.choice>img {
+    border: 4px solid rgb(37, 3, 92);
+    height: 150 px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.choice>img:hover {
+    border: 4px solid rgb(28, 215, 240);
+    border-radius: 50%;
+    cursor: pointer;
+}
