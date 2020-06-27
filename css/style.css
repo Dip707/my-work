@@ -37,7 +37,7 @@ html {
 hr {
     color: #b3ff00;
     background-color: #b3ff00;
-    border: #b3ff00 solid;
+    /* border: #b3ff00 solid; */
     width: 80%;
     margin: 7em auto 7.5em auto;
 }
