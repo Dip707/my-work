@@ -76,6 +76,7 @@ y:hover {
 
 #heading {
     margin-top: 0.2em;
+    margin-left: 1em;
     font-size: 3em;
     font-weight: 700;
     user-select: none;
@@ -247,7 +248,7 @@ y:hover {
 .about_item:active {
     transform: scale(1.1);
     color: #B3FF00;
-    border-left: #B3FF00;
+    /* border-left: #B3FF00; */
     border-left: 0.20em solid #B3FF00;
     transform-origin: 2em;
 }
@@ -391,6 +392,19 @@ y:hover {
     align-items: center;
 }
 
+#hello_btn1 {
+    border: #b3ff00 solid 0.19em;
+    height: 3em;
+    width: 7em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    user-select: none;
+    /* font-size: 2em; */
+}
+
 #whatsapp {
     margin-left: 4em;
     display: flex;
@@ -413,37 +427,42 @@ y:hover {
     margin: 1em 1.2em 1em 0;
 }
 
+#left_sidebar {
+    position: fixed;
+    /* position: sticky; 
+    bottom: 0em; */
+    bottom: 0%;
+    left: 0em;
+}
+
 #sidebar_line1 {
     width: 0.01em;
     display: flex;
     border: 0.02em solid #B3FF00;
     height: 10em;
-    position: fixed;
     bottom: 0em;
     left: 3em;
-}
-
-#sidebar_line2 {
-    width: 0.01em;
-    display: flex;
-    border: 0.02em solid #B3FF00;
-    height: 10em;
-    position: fixed;
-    bottom: 0em;
-    right: 3em;
+    /* position: sticky; */
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 #icons {
     display: flex;
-    position: fixed;
     top: 55%;
     left: 2.3em;
     flex-direction: column;
+    position: relative;
+    /* justify-content: center;
+    align-items: center; */
+    /* position: sticky; */
 }
 
 .icon_images {
     height: 1.5em;
     margin-top: 1em;
+    margin-bottom: 1em;
     fill: black;
 }
 
@@ -453,18 +472,36 @@ y:hover {
     fill: #B3FF00;
 }
 
-#gmail {
-    font: 1em;
-    position: fixed;
-    top: 63%;
-    right: -1.8em;
+#right_sidebar {
     transform: rotateZ(0.25turn);
+    display: flex;
+    position: fixed;
+    bottom: 20%;
+    right: -10.4em;
+    align-items: center;
+}
+
+#sidebar_line2 {
+    display: flex;
+    border: 0.02em solid #B3FF00;
+    position: relative;
+    width: 15em;
+    height: 0.001em;
+}
+
+#gmail {
+    /* font-size: 1em; */
+    position: inherit;
+    margin: 1em;
+    margin-right: 3em;
 }
 
 #gmail:hover {
     color: #B3FF00;
-    top: 62.5%;
+    font-size: 1.02em;
+    /* right: 1em; */
     transition: 0.25s;
+    /* transform: scale(1.2); */
 }
 
 #gotop {
@@ -474,7 +511,7 @@ y:hover {
     color: #4c00ff;
     font-weight: 900;
     position: fixed;
-    top: 2%;
+    top: 6em;
     right: 1.87em;
     height: 2em;
     width: 2em;
