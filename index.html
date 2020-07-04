@@ -11,7 +11,10 @@
     <title>Dip Turkar</title>
 </head>
 
+
+
 <body>
+
     <header id="nav" class="navbar">
         <a class="nav_items" href="./#">
             <img id="logon" class="logo" src="./assets/icons/logo.png" alt="logo">
@@ -30,7 +33,27 @@
                     Contact
                 </a>
         </nav>
+        <div id="hamburger">
+            <a onclick="openMenu()" id="toggle">
+                <div class="btn_bar"></div>
+                <div class="btn_bar"></div>
+                <div class="btn_bar"></div>
+            </a>
+            <div id="menu_page">
+                <a onclick="crossBtn()">
+                    <div class="close_bar" id="c_bar1"></div>
+                    <div class="close_bar" id="c_bar2"></div>
+                </a>
+                <a href="#land_item2" class="menu_opt">Home</a>
+                <a href="#line_about" class="menu_opt">About Me</a>
+                <a href="#line_projects" class="menu_opt">Projects</a>
+                <a href="#line_contact" class="menu_opt">Contact Me</a>
+            </div>
+        </div>
     </header>
+
+
+
     <main id="land">
         <section class="land_item" id="land_item1">
             <div id="description">
@@ -391,6 +414,3 @@
 </body>
 
 </html>
-<!-- <ul>
-    Hello, I am <a href="#nav">Dip Turkar</a> . I am a Computer Science Undergrad at BITS Pilani-Goa Campus. I love programming, solving problems,
-</ul> -->

@@ -1,5 +1,73 @@
 /* Universal Settings */
 
+@-webkit-keyframes scale-in-tr {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-tr {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes scale-in-tr-r {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-tr-r {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 html {
     font-family: 'Balsamiq Sans', cursive;
@@ -111,8 +179,70 @@ y:hover {
     transform: scale(1.1);
 }
 
-.nav_burger {
-    flex: 0.1;
+#hamburger {
+    /* background-color: aqua; */
+    display: none;
+    position: fixed;
+    top: 1.5em;
+    right: 1.3em;
+    align-items: center;
+    justify-content: center;
+    /* flex: 1; */
+}
+
+#toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_bar {
+    height: 0.25em;
+    width: 2em;
+    margin: 0.19em;
+    background-color: #B3FF00;
+}
+
+#menu_page {
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #4c00ff;
+    opacity: 90%;
+    animation: scale-in-tr 0.5s 1;
+}
+
+.close_bar {
+    background-color: white;
+    box-shadow: 0em 0em 0.5em red;
+    height: 0.30em;
+    width: 2em;
+    border-radius: 1em;
+    position: absolute;
+    top: 2.3em;
+    right: 1.6em;
+}
+
+#c_bar1 {
+    transform: rotateZ(0.125turn);
+}
+
+#c_bar2 {
+    transform: rotateZ(-0.125turn);
+}
+
+.menu_opt {
+    font-size: 2em;
+    color: #B3FF00;
+    text-shadow: 0em 0em 0.5em pink;
+    margin: 1em;
 }
 
 #land {

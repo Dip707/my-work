@@ -1,18 +1,18 @@
-    @media only screen and (max-width: 1300px) {
+    @media all and (max-width: 1300px) {
         /* For screen less than 1300px */
         #about_photo {
             flex: 0.5;
         }
     }
     
-    @media only screen and (max-width: 1200px) {
+    @media all and (max-width: 1200px) {
         /* For screen less than 1200px */
         #about_photo {
             flex: 0;
         }
     }
     
-    @media only screen and (max-width: 1000px) {
+    @media all and (max-width: 1000px) {
         /* For screen less than 1000px */
         .about_item>h1 {
             display: flex;
@@ -58,7 +58,10 @@
         }
     }
     
-    @media only screen and (max-width: 800px) {
+    @media all and (max-width: 800px) {
+        #heading {
+            font-size: 2.5em;
+        }
         #land {
             flex-direction: column-reverse;
         }
@@ -86,13 +89,15 @@
         }
         #whatsapp {
             margin: auto;
+            margin-left: 2em;
+            text-align: center;
+        }
+        #hello_btn1 {
+            margin: 1em;
         }
     }
     
-    @media only screen and (max-width: 750px) {
-        #heading {
-            font-size: 2.5em;
-        }
+    @media all and (max-width: 750px) {
         #btn_div {
             flex: 0.5;
             justify-content: center;
@@ -101,11 +106,11 @@
             font-size: 1.25em;
         }
         #about_details {
-            overflow: scroll;
+            overflow-y: scroll;
         }
     }
     
-    @media only screen and (max-width: 700px) {
+    @media all and (max-width: 700px) {
         #left_sidebar {
             left: -1.5em;
         }
@@ -120,4 +125,36 @@
         }
     }
     
-    @media only screen and (max-width: 630px) {}
+    @media all and (max-width: 600px) {
+        .contact_details {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #whatsapp {
+            margin: 0em;
+        }
+        #hello_btn1 {
+            margin: 0em;
+            margin: 0em 4em 1em -4em;
+        }
+        #about_items {
+            width: 90%;
+            /* overflow: scroll; */
+        }
+    }
+    
+    @media all and (max-width: 600px) {
+        #btn_div {
+            display: none;
+        }
+        #hamburger {
+            display: flex;
+        }
+        .about_item {
+            font-size: 0.6em;
+        }
+        #gmail {
+            display: none;
+        }
+    }

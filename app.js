@@ -1,3 +1,22 @@
+{ //hamburger menu
+    function openMenu() {
+
+        document.getElementById('menu_page').style.animation = "scale-in-tr 0.2s 1";
+        document.getElementById('menu_page').style.display = "flex";
+    }
+
+    function crossBtn() {
+        document.getElementById('menu_page').style.animation = "scale-in-tr-r 0.2s 1";
+        setTimeout(closeMenu, 200);
+
+    }
+
+    function closeMenu() {
+
+        document.getElementById('menu_page').style.display = "none";
+    }
+}
+
 {
     //navbar change on scrolling
     window.onscroll = function() {
@@ -28,8 +47,8 @@
         }
 
         if (
-            document.body.scrollTop > 190 ||
-            document.documentElement.scrollTop > 190
+            document.body.scrollTop > 400 ||
+            document.documentElement.scrollTop > 400
         ) {
             document.getElementById('heading').innerHTML = "Dip Turkar";
             document.getElementById("gotop").style.display = "flex";
@@ -71,6 +90,8 @@
         x.addListener(myFunction);
     }
 }
+
+
 
 // { //copy whatsapp number
 //     function copyWhatsapp() {
