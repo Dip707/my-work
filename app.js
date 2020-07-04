@@ -12,7 +12,6 @@
     }
 
     function closeMenu() {
-
         document.getElementById('menu_page').style.display = "none";
     }
 }
