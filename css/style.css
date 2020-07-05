@@ -1,5 +1,7 @@
 /* Universal Settings */
 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @-webkit-keyframes scale-in-tr {
     0% {
         -webkit-transform: scale(0);
@@ -68,7 +70,7 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 html {
     font-family: 'Balsamiq Sans', cursive;
     background-color: #4c00ff;
