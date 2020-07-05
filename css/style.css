@@ -397,8 +397,15 @@ y:hover {
     border-radius: 1em;
 }
 
+#about_details::-webkit-scrollbar {
+    display: none;
+}
+
 #about_details {
     border: 0.10em solid #B3FF00;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .about_bio {
