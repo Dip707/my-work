@@ -90,6 +90,7 @@ a {
 
 body {
     height: 185em;
+    font-family: 'Balsamiq Sans', cursive;
     overflow: scroll;
 }
 
